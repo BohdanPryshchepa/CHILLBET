@@ -1,0 +1,563 @@
+body{
+    margin: 0px;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: rgb(14, 22, 33);
+}
+.container{
+    position: relative;
+    margin: 15px;
+}
+.container >div{
+    margin: 25px;
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    
+}
+.menu{
+    z-index: 99;
+    height: 80px;
+    min-height: 61px;
+    box-shadow: rgba(0, 0, 0, 0.26) -2px 0px 5px;
+    padding: 12px 16px;
+    background: 100% / auto no-repeat rgb(23, 33, 43);
+
+}
+.menu ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    font-size: 25px;
+}
+.menu ul li ul{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+  
+}
+.menu ul li ul li:hover{
+    color:rgb(152, 171, 207);
+    cursor: pointer;
+}
+
+.btn a{
+    height: 37px;
+    padding: 20px 25px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    background-color: rgba(255, 255, 255, 0.098);
+    border: none;
+    border-radius: 8px;
+    color: white;
+}
+.btn a:first-child{
+    border: 1px solid rgb(107, 113, 132);
+}
+.btn a:last-child{
+    margin-left: 12px;
+    background-color: rgb(113, 215, 51);
+}
+
+
+
+
+.btnReg {
+    text-align: center; 
+    margin:150px 0px; 
+
+}
+
+.btnReg a {
+    display: inline-block; 
+    padding: 10px 20px; 
+    background-color: #007bff;
+    color: #fff; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    font-size: 50px; 
+    font-weight: bold; 
+    text-transform: uppercase;
+}
+
+.btnReg a:hover {
+    background-color: #001f41; 
+}
+
+
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
+    margin-bottom: 200px;
+}
+
+
+
+.aboutMoney {
+    text-align: center;
+}
+
+
+.aboutText h2 {
+    font-size: 45px;
+    margin-bottom: 10px;
+    color: rgb(152, 171, 207);
+    margin-bottom: 30px;
+}
+
+
+.aboutMoney span {
+    display: block;
+    width: 100%;
+    height: 100px; 
+    font-size: 35px;
+    animation: blink 1s infinite;
+}
+
+
+.aboutMoney span:first-child {
+    font-size: 155px; 
+    font-weight: bold; 
+    display: block; 
+    margin-bottom: 100px; 
+    color: #0056b3; 
+    animation: blink 1s infinite;
+
+}
+.aboutMoney span:first-child:hover {
+    color: #0056b3; 
+}
+
+@keyframes blink {
+    0% { color: #fff; }
+    50% {  color: #0056b3;}
+    100% { color: #fff; }
+  }
+
+
+  .main_games h2{
+    font-size: 35px;
+    color: rgb(152, 171, 207);
+    margin-bottom: 30px;
+}
+
+
+
+
+.games_images {
+    display: flex;
+    gap: 20px; 
+    cursor: pointer;
+    text-align: center;
+    justify-content: center; 
+    margin-bottom: 80px;
+
+}
+
+.games_images > div {
+    position: relative; 
+}
+
+.games_images img {
+    max-width: 100%;
+    border-radius: 10px; 
+}
+
+.games_images p {
+    position: absolute; 
+    bottom: 5px; 
+    left: 0; 
+    right: 0; 
+    background-color: #0056b3;;
+    color: #fff; 
+    padding: 10px;
+    border-radius: 15px;
+    font-weight: 600;
+}
+
+
+
+.description {
+    display: flex; 
+    align-items: center;
+}
+
+.description > div {
+    flex: 1; 
+    margin: 0 10px; 
+}
+
+.description img {
+    max-width: 100%; 
+    height: auto; 
+}
+.description h2{
+    font-size: 35px;
+    color: rgb(152, 171, 207);
+    margin-bottom: 30px;
+}
+    
+.players {
+    text-align: center; 
+    margin-top: 120px; 
+    margin-bottom: 50px;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+table {
+    margin-top: 40px;
+    border-collapse: separate; 
+    border-spacing: 10; 
+    width: 80%; 
+    margin: 0 auto; 
+    color: white;
+    background-color: rgb(23, 33, 43);
+    border-radius: 15px;
+
+}
+
+th, td {
+    padding: 10px; 
+}
+
+th {
+    font-size: 45px; 
+    color: rgb(152, 171, 207); 
+    gap: 15px;
+}
+td {
+    font-size: 20px; 
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+.players h2{
+    color: rgb(152, 171, 207);
+    font-size: 35px;
+    text-transform: uppercase;
+    background-color: rgb(23, 33, 43);
+    padding: 6px 12px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+  
+}
+#borderless-table {
+    border-collapse: collapse;
+}
+
+#borderless-table th {
+    border-bottom: 4px solid rgb(14, 22, 33); 
+}
+
+#borderless-table tr td {
+    border-bottom: 4px solid rgb(14, 22, 33);  
+}
+
+#borderless-table th,
+#borderless-table td {
+    border-top: none; 
+}
+
+
+
+
+
+.playersWon img{
+    width: 100px;
+    height: 100px;
+}
+.playersWon{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.4rem;
+}
+.moneyWon, .allPlayers{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 25px 50px;
+    align-items: center;
+    border-radius: 15px;
+    background-color: rgb(23, 33, 43);
+
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-weight: 600;
+  
+}
+
+
+
+
+
+.footer {
+   
+    border-radius: 15px;
+    padding: 15px;
+
+}
+
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+    list-style: none;
+}
+
+.footer ul li {
+    flex: 1;
+    margin-right: 20px; 
+}
+
+.footer h3 {
+    margin-bottom: 10px;
+    color: red;
+}
+
+.footer ul ul {
+    margin-top: 10px;
+}
+
+.footer ul ul li {
+    margin-bottom: 5px;
+}
+
+.footer img {
+    width: 50px;
+    height: 50px;
+    color: antiquewhite;
+}
+.infoFooter{
+    display: flex;
+}
+.footer h3{
+    font-size: 25px;
+    margin-bottom: 35px;
+    color: White
+}
+.footer a{
+    color: rgb(152, 171, 207);
+    font-size: 14px;
+}
+.footer a:hover{
+    color: rgb(17, 58, 243);
+}
+.social{
+    display: flex;
+}
+
+
+.social-links a:hover {
+    color: #007bff;
+}
+
+.additional-info {
+    text-align: center;
+}
+
+.additional-info p {
+    margin: 5px 0;
+}
+
+.additional-info a {
+    color: rgb(152, 171, 207);
+    text-decoration: none;
+}
+
+.additional-info a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1440px) {
+    .container {
+        width: 1280px; 
+        margin: 0 auto 0 auto;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .menu ul li ul {
+     
+        display: none;
+    }
+    .container >div {
+         margin: 0
+    }
+
+  
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .container {
+      display: flex;
+      margin: 10px;
+    }
+    .menu{
+        background: none;
+    }
+    .menu ul {
+        font-size: 18px;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .menu ul li ul {
+        flex-direction: column; 
+        gap: 10px; 
+        display: none;
+    }
+
+    .btn {
+        flex-direction: column; 
+        gap: 10px; 
+    }
+
+    .btn a {
+        padding: 15px 25px; 
+        font-size: 16px;
+    }
+    .btnReg {
+        text-align: center;
+        margin: 150px 0px;
+    }
+
+    .about {
+        flex-direction: column; 
+        gap: 20px; 
+    }
+
+    .aboutText h2 {
+        font-size: 35px;
+        text-align: center;
+    }
+    .aboutText span {
+        font-size: 20px;
+    }
+
+    .aboutMoney span {
+        font-size: 50px; 
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 200px;
+    }
+
+    .aboutMoney {
+        text-align: center;
+        margin-top: 20px; /
+    }
+}
+
+    .main_games h2 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .games_images {
+        flex-direction: column;
+        gap: 80px;
+        align-items: center;
+    }
+    
+    .games_images img {
+        border-radius: 10px;
+    }
+
+    .games_images div {
+        width: 100%;
+    }
+
+    .games_images p {
+        position: relative;
+        background-color: transparent;
+        margin-top: 10px;
+        font-size: 25px;
+        font-weight: 600;
+
+    }
+
+    .description {
+        flex-direction: column;
+        gap: 40px; 
+       
+    }
+
+    .description img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .description h2 {
+        font-size: 40px;
+        text-align: center;
+    }
+    .description p {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .players {
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+
+    table {
+        font-size: 16px; 
+        width: 100%; 
+    }
+
+    .footer {
+        margin-top: 30px;
+    }
+
+    .footer h3 {
+        font-size: 30px;
+    }
+
+    .footer a {
+        font-size: 15px;
+    }
+
+    .additional-info {
+        margin-top: 20px;
+    }
+
+    .additional-info p {
+        font-size: 15px;
+    }
+  @media screen and (min-width: 769px) {
+    .games_images {
+        flex-direction: row;
+        gap: 80px;
+        align-items: center;
+    }
+}
